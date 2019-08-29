@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Modern browser worklet example</title>
+    <script>
+      // checkboard set
+      if ('paintWorklet' in CSS) {
+        CSS.paintWorklet.addModule('static/checkerboard.js');
+      }
+    </script>
+    <style>
+      textarea {
+        background-image: url(checkerboard);
+        background-image: paint(checkerboard);
+      }
+    </style>
+  </head>
+  <body>
+    <textarea></textarea>
+  </body>
+</html>

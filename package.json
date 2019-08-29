@@ -1,0 +1,24 @@
+{
+  "name": "worklet-example",
+  "version": "0.0.1",
+  "description": "Modern browser worklet example",
+  "main": "checkerboard.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trustyoo86/worklet-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trustyoo86/worklet-example/issues"
+  },
+  "homepage": "https://github.com/trustyoo86/worklet-example#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1"
+  }
+}
