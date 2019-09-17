@@ -1,0 +1,23 @@
+textarea {
+  background-image: url(checkerboard);
+  background-image: paint(checkerboard);
+  width: 400px;
+  height: 300px;
+}
+
+/* switch example */
+.switch {
+  background-image: paint(switch);
+  /* color: #e1e1e1; */
+  width: 50px;
+  height: 30px;
+  --switch-on: 0;
+  transition: --switch-on 200ms;
+  -webkit-appearance: none;
+}
+
+.switch:checked {
+  background-image: paint(switch);
+  /* color: #ffcd00; */
+  --switch-on: 1;
+}

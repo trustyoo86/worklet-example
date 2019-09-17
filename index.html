@@ -5,17 +5,25 @@
     <script>
       // checkboard set
       if ('paintWorklet' in CSS) {
-        CSS.paintWorklet.addModule('static/checkerboard.js');
+        CSS.paintWorklet.addModule('static/Checkerboard.js');
+        CSS.paintWorklet.addModule('static/Switch.js');
+      }
+
+      if ('registerProperty' in CSS) {
+        CSS.registerProperty({
+          name: '--switch-on',
+          syntax: '<number>',
+          inherits: true,
+          initialValue: '0',
+        });
       }
     </script>
-    <style>
-      textarea {
-        background-image: url(checkerboard);
-        background-image: paint(checkerboard);
-      }
-    </style>
+    <link rel="stylesheet" href="static/main.css" />
   </head>
   <body>
+    <!-- textarea worklet 설정 -->
     <textarea></textarea>
+    <!-- swtich example -->
+    <input type="checkbox" class="switch"></div>
   </body>
 </html>

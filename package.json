@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/trustyoo86/worklet-example#readme",
   "dependencies": {
+    "eslint": "^6.4.0",
     "express": "^4.17.1",
     "nodemon": "^1.19.1"
   }
