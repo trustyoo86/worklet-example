@@ -5,8 +5,7 @@
     <script>
       // checkboard set
       if ('paintWorklet' in CSS) {
-        CSS.paintWorklet.addModule('static/Checkerboard.js');
-        CSS.paintWorklet.addModule('static/Switch.js');
+        CSS.paintWorklet.addModule('static/main.js');
       }
 
       if ('registerProperty' in CSS) {
@@ -25,5 +24,9 @@
     <textarea></textarea>
     <!-- swtich example -->
     <input type="checkbox" class="switch"></div>
+    <!-- selectbox example -->
+    <select class="select">
+      <option>test</option>
+    </select>
   </body>
 </html>

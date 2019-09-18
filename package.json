@@ -5,7 +5,8 @@
   "main": "checkerboard.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./server.js"
+    "start": "nodemon ./server.js",
+    "dev": "webpack --config ./tools/development.js --watch"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,15 @@
   },
   "homepage": "https://github.com/trustyoo86/worklet-example#readme",
   "dependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
     "eslint": "^6.4.0",
     "express": "^4.17.1",
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "path": "^0.12.7",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-merge": "^4.2.2"
   }
 }
