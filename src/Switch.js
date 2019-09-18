@@ -54,4 +54,4 @@ class Switch {
   }
 }
 
-registerPaint('switch', Switch);
+module.exports = Switch;

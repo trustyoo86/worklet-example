@@ -34,7 +34,4 @@ class CheckerboardPainter {
   }
 }
 
-/**
- * css내 paint 함수 정의
- */
-registerPaint('checkerboard', CheckerboardPainter);
+module.exports = CheckerboardPainter;
